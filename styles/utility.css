@@ -1,0 +1,22 @@
+.display-in {
+    display: inline-flex;
+}
+.display-inblock {
+    display: inline-block;
+}
+.display-block {
+    display: block;
+}
+.display-flex {
+    display: flex;
+}
+.display {
+    display: inline-flex;
+}
+.display {
+    display: inline-flex;
+}
+
+.sticky {
+    position: sticky;
+}
