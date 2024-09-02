@@ -10,17 +10,20 @@
  
 }
 
-
+.header_acessibility{
+    display: inline-flex;
+    margin: auto;
+}
 
 .pesquisa input {
     content: " ";
     padding: 5px;
     border-radius: 8px;
     height: 30px;
-    background-position: right;
     background-repeat: no-repeat;
-    background-size: 20px;
-    background-image: url("/cic-2.0/assets/icons/magnifying-glass-solid.svg");
+    background-size: 18px;
+    background-position: 97%;
+    background-image: url("/assets/icons/magnifying-glass-solid.svg");
 }
 
 .header-top {
