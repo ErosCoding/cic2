@@ -20,7 +20,7 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: 20px;
-    background-image: url("/cic-2.0/assets/icons/magnifying-glass-solid.svg");
+    background-image: url("/assets/icons/magnifying-glass-solid.svg");
 }
 
 .header-top {
@@ -36,4 +36,13 @@
     height: 102.9px;
     background: rgb(2,0,36, 0.3);
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0) 35%, rgba(0,212,255,1) 100%); */
+}
+
+.acessibility-container{
+margin: 2.5rem auto auto 65px;
+text-decoration: none;
+}
+.acessibility-test{
+    text-align: left;
+
 }
