@@ -1,24 +1,19 @@
 //
 
-const  navFunction = (position) => {
-var nav = document.getElementById('nav-header');
-
-var htotal = window.innerHeight;
-
-
-let aux = htotal - 255;
-
-position--;
-console.log(document.documentElement.scrollTop);
-
+const  navFunction = (nav) => {
+let container = document.getElementById('container-main');
 if(document.documentElement.scrollTop >= 238 ){
         nav.setAttribute("class","Onsticky");
-        console.log("if 01");
+       
+        container.setAttribute("class","display-in ContainerSticky");
 
 }else if(document.documentElement.scrollTop < 238){
         nav.removeAttribute('class');
         nav.setAttribute("class","Ofsticky");
-        console.log("if 02");
+        container.setAttribute("class","display-in container-main");
+       
+      
+        
 
 }
     
