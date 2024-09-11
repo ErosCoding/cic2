@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 :root { 
     --first-color: #00ac4f;
     --second-color: #FDB913;
@@ -22,4 +24,8 @@
 body{
     font-family: "Raleway", sans-serif;
     max-width: 1920px;
+}
+.container{
+    width: 1280px;
+    margin:auto;
 }

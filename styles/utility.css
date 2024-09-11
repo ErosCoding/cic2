@@ -4,6 +4,12 @@
 .display-inblock {
     display: inline-block;
 }
+.bs{
+    margin-top: 2px;
+    width: 100%;
+    border-bottom:2.2px solid;
+    
+}
 .display-block {
     display: block;
 }
@@ -19,4 +25,15 @@
 
 .sticky {
     position: sticky;
+    top: 0.1px;
+    background-color: #F0E6E6;
+}
+
+.grid-cl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gap-1{
+    gap: 0.5rem;
 }
