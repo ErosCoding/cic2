@@ -23,11 +23,18 @@
     display: inline-flex;
 }
 
-.sticky {
+.Onsticky {
     position: sticky;
     top: 0.1px;
-    background-color: #F0E6E6;
+background-image: url('../assets/logopbh.png');   
+    background-color:rgb(236, 26, 26);
 }
+.Ofsticky {
+    top:0.1px;
+    background-color: white;
+
+}
+
 
 .grid-cl {
     display: grid;
