@@ -54,7 +54,10 @@ strong:hover{
     transition: all;
     animation: opAnimated 1s linear;
 }
-
+.copyright{
+    position: absolute;
+    bottom: 0;
+}
 @keyframes opAnimated {
   
     
