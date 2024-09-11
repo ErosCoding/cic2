@@ -26,9 +26,9 @@
 .Onsticky {
     position: sticky;
     top: 0.1px;
-background-image: url('../assets/logopbh.png');   
-    background-color:rgb(236, 26, 26);
+    background-image: url('../assets/Brasaologopbh.png');   
 }
+
 .Ofsticky {
     top:0.1px;
     background-color: white;
