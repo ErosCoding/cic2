@@ -42,7 +42,29 @@ strong:hover{
     background-position: 97%;
     background-image: url("/assets/icons/magnifying-glass-solid.svg");
 }
+.divGeral{
+  justify-content: center;
+    flex-wrap: wrap;
+    display: inline-flex;
+    margin-left:70px;
+    margin-right: auto;
+    height: 100px;
+    overflow: hidden;
+    width: 600px;
+    transition: all;
+    animation: opAnimated 1s linear;
+}
 
+@keyframes opAnimated {
+  
+    
+}
+.opgeral
+{
+   
+    margin: 20px;
+
+}
 #nav-header{
     background-color: rgba(248, 248, 248, 1);
     transition: all 5s linear 2s ease-in-out;
