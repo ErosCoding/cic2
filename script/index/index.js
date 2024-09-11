@@ -11,7 +11,7 @@ op[0].style=" justify-content: center;flex-wrap: wrap;display: inline-flex;margi
 
 const navOutHover =() =>{
     let op = document.getElementsByClassName('divGeral');
-    op[0].style=" justify-content: center;flex-wrap: wrap;display: inline-flex;margin-left:70px;margin-right: auto;height: 200px;width: 600px; display:display: inline-flex;border-bottom: 2px solid ;"
+    op[0].style=" justify-content: center;flex-wrap: wrap;display: inline-flex;margin-left:70px;margin-right: auto;height: 200px;width: 600px; display: none;border-bottom: 2px solid ;"
 
 
 }
