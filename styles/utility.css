@@ -34,6 +34,7 @@
     margin-bottom: 30px;
     transition: all;
     animation: Stickyanimation 0.5s linear forwards;
+    z-index: 1;
     
 }
 .ContainerSticky{

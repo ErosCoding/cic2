@@ -4,17 +4,36 @@
 const navOnHover =() =>{
 let op = document.getElementsByClassName('divGeral');
 
-op[0].style=" justify-content: center;flex-wrap: wrap;display: inline-flex;margin-left:70px;margin-right: auto;height: 200px;width: 600px;display: inline-flex;border-bottom: 2px solid ;"
+op[0].style=" justify-content: center;flex-wrap: wrap;background-color:white;display: inline-flex;height: 50px;width: 1800px;display: inline-flex;animation: opAnimated 1s linear forwards;position: absolute;transition: all 1.5s ease;"  
 
 
 }
+
+
+const OnclikGeral =() =>{
+        let divGeral = document.getElementsByClassName('divGeral');
+        let op1 = document.getElementsByClassName('op');
+
+        if(op1[1].value == 'true'){
+                divGeral[0].style="display: none"
+                op1[1].value = 'false';     
+        }else if(op1[1].value === undefined || op1[1].value == 'false')
+        {
+                divGeral[0].style=" box-shadow: inset;justify-content: center;flex-wrap: wrap;background-color:white;display: inline-flex;height: 50px;width: 1800px;display: inline-flex;position: absolute;";
+                op1[1].value = 'true';  
+        }
+      
+}
+
 
 const navOutHover =() =>{
-    let op = document.getElementsByClassName('divGeral');
-    op[0].style=" justify-content: center;flex-wrap: wrap;display: inline-flex;margin-left:70px;margin-right: auto;height: 200px;width: 600px; display: none;border-bottom: 2px solid ;"
+    let op = document.getElementsByClassName('divvalue');
+    op[0].style="display: none"
 
 
 }
+
+
 
 const  navFunction = (nav) => {
 let container = document.getElementById('container-main');
