@@ -1,5 +1,5 @@
 //
-
+import "./global";
 
 const navOnHover =() =>{
 let op = document.getElementsByClassName('divGeral');
@@ -10,17 +10,22 @@ op[0].style=" justify-content: center;flex-wrap: wrap;background-color:white;dis
 }
 
 
-const OnclikGeral =() =>{
+const OnclikGuia =() =>{
         let divGeral = document.getElementsByClassName('divGeral');
-        let op1 = document.getElementsByClassName('op');
-
-        if(op1[1].value == 'true'){
+      
+        let op = document.getElementsByClassName('op');
+        
+       for(let i = 0; i<=3; i++){
+        console.log(op[i].id);
+        
+       }
+        if(op[0].value == 'true'){
                 divGeral[0].style="display: none"
-                op1[1].value = 'false';     
-        }else if(op1[1].value === undefined || op1[1].value == 'false')
+                op[0].value = 'false';     
+        }else if(op[0].value === undefined || op[0].value == 'false')
         {
                 divGeral[0].style=" box-shadow: inset;justify-content: center;flex-wrap: wrap;background-color:white;display: inline-flex;height: 50px;width: 1800px;display: inline-flex;position: absolute;";
-                op1[1].value = 'true';  
+                op[0].value = 'true';  
         }
       
 }
