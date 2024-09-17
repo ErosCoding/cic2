@@ -1,4 +1,6 @@
-let pageGeral = [
+
+
+export const pageCadastros= [
 
 
 
@@ -6,7 +8,7 @@ let pageGeral = [
     
 ];
 
-let pageCadastros= [
+export const pageCargas= [
 
 
 
@@ -14,15 +16,7 @@ let pageCadastros= [
     
 ];
 
-let pageCargas= [
-
-
-
-
-    
-];
-
-let pageGerenciamento= [
+export const pageGerenciamento= [
 
 
 
