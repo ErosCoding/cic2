@@ -29,17 +29,18 @@
            <div id="container-main"class="display-in container-main">
             
             <div value="inicio">INICIO</div> 
-            <div class="op" id="geral" onclick="OnclikNav()"  active="false" value="false">GERAL</div>
-            <div class="op " id="cadastro" onclick="OnclikNav()" value="false">CADASTROS</div>
-            <div class="op" id="cargas"  onclick="OnclikNav()" value="false">CARGAS</div>
-            <div class="op" id="gerenciamento" onclick="OnclikNav()" value="false">GERENCIAMENTO</div>
+            <div class="op" id="geral" onclick="OnclikNav(this.id)"  active="false" value="false">GERAL</div>
+            <div class="op " id="cadastro" onclick="OnclikNav(this.id)" value="false">CADASTROS</div>
+            <div class="op" id="cargas"  onclick="OnclikNav(this.id)" value="false">CARGAS</div>
+            <div class="op" id="gerenciamento" onclick="OnclikNav(this.id)" value="false">GERENCIAMENTO</div>
            </div>
            <div class="bs"></div>
         </nav>
     
-        <div class="divGeral">
-        
-        </div>
+        <div class="divGeral"></div>
+        <div class="divCadastros"></div>
+        <div class="divCargas"></div>
+        <div class="divGerenciamento"></div>
        
     <div class="container">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis libero fuga aperiam repellendus, quam molestias ipsa? Praesentium veritatis aliquam repudiandae est laborum facere possimus cum facilis, id ratione quia fugiat.
@@ -55,17 +56,7 @@
         <div class="container access">
             ACESSO RÁPIDO 
         </div>
-        <div class="container grid-cl gap-1">
-            <div class="item"> <a href="#">Apagar Carga</a></div>
-            <div class="item"> <a href="#">Carregar Custos com Agua</a></div>
-            <div class="item"> <a href="#">Carregar Custos com Energia</a></div>
-            <div class="item"> <a href="#">Custo com Suprimentos</a></div>
-            <div class="item"> <a href="#">Carga SUCC</a></div>
-            <div class="item"> <a href="#">Carga SOF</a></div>
-            <div class="item"> <a href="#">Unidades</a></div>
-            <div class="item"> <a href="#">Endereços</a></div>
-            <div class="item"> <a href="#">Centros Custo</a></div>
-            <div class="item"> <a href="#">Códigos de Lotação</a></div>
+        <div id="quickAccess" class="container grid-cl gap-1" onload="AcessoRapido()">
         </div>
         <div class="copyright"></div>
         
