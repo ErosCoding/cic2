@@ -1,4 +1,3 @@
-//
 
 
 
@@ -171,10 +170,13 @@ op[0].style=" justify-content: center;flex-wrap: wrap;background-color:white;dis
 
 }
 
+
+
 function navFunction(nav){
 let container = document.getElementById('container-main');
 if(document.documentElement.scrollTop >= 238 ){
         nav.setAttribute("class","Onsticky");
+        
        
         container.setAttribute("class","display-in ContainerSticky");
 
@@ -183,6 +185,8 @@ if(document.documentElement.scrollTop >= 238 ){
         nav.setAttribute("class","Ofsticky");
         container.setAttribute("class","display-in container-main");
        
+        img('../assets/Brasaologopbh.png','cimg','cimg1',container) ;
+
       
         
 

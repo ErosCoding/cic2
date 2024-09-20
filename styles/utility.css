@@ -28,6 +28,10 @@ html{
 
     font-family: Roboto,arial,sans-serif;
 }
+.cimg{
+    width: 80px;
+    height: 80px;
+}
 .Onsticky {
     position: sticky;
     top: 0.1px;
