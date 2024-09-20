@@ -124,35 +124,47 @@
        
 }
 
-function services(){
+window.addEventListener("load", function services(){
 let card = document.getElementsByClassName('Services');
 let page =["img","title","subtitle","href"];
-
-page["img"]="/assets/logopbh.png";
-page["title"] = "texto";
-page["subtitle"]= 'subtitle'
-page["href"] = "#";
-
-
-page.forEach(tag =>{
-card[0].innerHTML=`<img src='${page["img"]}' class='card_img'><p title="texto" >${page["title"]}</p><p title="subtitle" ></p>`;
-console.log(tag);
+let title =["PAINÃ‰IS QLIKSENSE"];
+let title2 =["PAINÃ‰IS QLIKSENSE"];
+let title3 =["PAINÃ‰IS QLIKSENSE"];
+let subtitle = ["RESUMO SOBRE OS PAINEIS/PROJETO"];
+let subtitle2 = ["RESUMO SOBRE OS PAINEIS/PROJETO"];
+let subtitle3 = ["RESUMO SOBRE OS PAINEIS/PROJETO"];
+let i = ["MAIS SOBRE"];
+let i2 = ["MAIS SOBRE"];
+let i3 = ["MAIS SOBRE"];
+let htmlContent =''
+for(let x =0;x<3;x++){
+        
+htmlContent += container('display-in Containerservice','service',
+        img('../assets/Brasaologopbh.png','cimg','cimg1',card[0])
+        +
+        container('card-text','card-text',
+                p('',title,title,title,card[0])
+                +
+                p('',subtitle,subtitle,subtitle,card[0])
+                +
+                inputButton('',i,i,i,card[0]),card[0]),card[0]
+        );
 }
-)
+
+return card[0].innerHTML=htmlContent ;
 
 
 
 
+});
 
 
 
-
-}
 function AcessoRapido(){
         console.log('teste');
 
         let quickAccess = document.getElementById('quickAccess');
-        let Pages = ['Apagar Carga','Carregar Custos com Agua','Carregar Custos com Energia','Custo com Suprimentos','Carga SUCC','Carga SOF','Unidades','Endereços','Centros Custo','Código de Lotação']
+        let Pages = ['Apagar Carga','Carregar Custos com Agua','Carregar Custos com Energia','Custo com Suprimentos','Carga SUCC','Carga SOF','Unidades','Endereï¿½os','Centros Custo','Cï¿½digo de Lotaï¿½ï¿½o']
         let htmlContent = '';
         Pages.forEach(p=>{
             htmlContent  += `<div class="item"><a href='#'>${p}</a></div>`;
@@ -209,7 +221,7 @@ if(document.documentElement.scrollTop >= 238 ){
         nav.setAttribute("class","Ofsticky");
         container.setAttribute("class","display-in container-main");
        
-        img('../assets/Brasaologopbh.png','cimg','cimg1',container) ;
+     
 
       
         
@@ -217,7 +229,7 @@ if(document.documentElement.scrollTop >= 238 ){
 }
     
 }
-window.services=services;
+
 window.AcessoRapido = AcessoRapido();
 window.OnclikNav = OnclikNav;
 window.navFunction = navFunction;
