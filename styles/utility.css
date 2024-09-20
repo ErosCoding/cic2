@@ -46,6 +46,13 @@ html{
 
     margin: 15px 0px 60px 62px;
 }
+
+
+#card-input-1{
+    padding: 2px;
+
+}
+
 .Containerservice{
    
     margin-left: 130px;
@@ -55,6 +62,9 @@ html{
     width: 1100px;
     margin-bottom: 20px;
 
+}
+.card-title{
+    font-weight: bold;
 }
 .cimg{
     width: 100px;

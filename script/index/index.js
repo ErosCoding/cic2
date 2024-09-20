@@ -58,19 +58,19 @@
         let txtCargas = "<div class='divText'>";
         let txtGerenciamento = "<div class='divText'>";
         pageGeral.forEach((page) =>{
-               txtGeral  +=`<div id="${page}" class='opgeral'>${page}</div>`
+               txtGeral  += div(page,'opgeral','','','','');
         }
         );
         pageCadastros.forEach((page) =>{
-                txtCadastros +=`<div id="${page}" class='opgeral'>${page}</div>`
+                txtCadastros +=div(page,'opgeral','','','','');
         }
         );
         pageCargas.forEach((page) =>{
-                txtCargas +=`<div id="${page}" class='opgeral'>${page}</div>`
+                txtCargas +=div(page,'opgeral','','','','');
         }
         );
         pageGerenciamento.forEach((page) =>{
-                txtGerenciamento +=`<div id="${page}" class='opgeral'>${page}</div>`
+                txtGerenciamento +=div(page,'opgeral','','','','');
         }
         );
      if(guia == 'geral'){
@@ -137,17 +137,19 @@ let i = ["MAIS SOBRE"];
 let i2 = ["MAIS SOBRE"];
 let i3 = ["MAIS SOBRE"];
 let htmlContent =''
-for(let x =0;x<3;x++){
+for(let x =1;x<=3;x++){
         
 htmlContent += container('display-in Containerservice','service',
+
         img('../assets/Brasaologopbh.png','cimg','cimg1',card[0])
         +
-        container('card-text','card-text',
-                p('',title,title,title,card[0])
+        container(
+                'card-text','card-text',
+               p('','card-title',`card-title-${x}`,title,card[0]) 
                 +
                 p('',subtitle,subtitle,subtitle,card[0])
                 +
-                inputButton('',i,i,i,card[0]),card[0]),card[0]
+                inputButton('window.location.href="https://qlik.pbh.gov.br/sense/app/faab3f22-1dbf-42eb-bea2-be71bc65785a/sheet/3d724703-d887-4f20-aad2-c80252dea553/state/analysis"',i,`card-input-${x}`,i,card[0]),card[0]),card[0]
         );
 }
 
@@ -212,7 +214,7 @@ function navFunction(nav){
 let container = document.getElementById('container-main');
 if(document.documentElement.scrollTop >= 238 ){
         nav.setAttribute("class","Onsticky");
-        
+        limparGuias();
        
         container.setAttribute("class","display-in ContainerSticky");
 
@@ -220,6 +222,7 @@ if(document.documentElement.scrollTop >= 238 ){
         nav.removeAttribute('class');
         nav.setAttribute("class","Ofsticky");
         container.setAttribute("class","display-in container-main");
+        limparGuias();
        
      
 
