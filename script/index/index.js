@@ -124,11 +124,35 @@
        
 }
 
+function services(){
+let card = document.getElementsByClassName('Services');
+let page =["img","title","subtitle","href"];
+
+page["img"]="/assets/logopbh.png";
+page["title"] = "texto";
+page["subtitle"]= 'subtitle'
+page["href"] = "#";
+
+
+page.forEach(tag =>{
+card[0].innerHTML=`<img src='${page["img"]}' class='card_img'><p title="texto" >${page["title"]}</p><p title="subtitle" ></p>`;
+console.log(tag);
+}
+)
+
+
+
+
+
+
+
+
+}
 function AcessoRapido(){
         console.log('teste');
 
         let quickAccess = document.getElementById('quickAccess');
-        let Pages = ['Apagar Carga','Carregar Custos com Agua','Carregar Custos com Energia','Custo com Suprimentos','Carga SUCC','Carga SOF','Unidades','EndereÃ§os','Centros Custo','CÃ³digos de LotaÃ§Ã£o']
+        let Pages = ['Apagar Carga','Carregar Custos com Agua','Carregar Custos com Energia','Custo com Suprimentos','Carga SUCC','Carga SOF','Unidades','Endereços','Centros Custo','Código de Lotação']
         let htmlContent = '';
         Pages.forEach(p=>{
             htmlContent  += `<div class="item"><a href='#'>${p}</a></div>`;
@@ -193,6 +217,7 @@ if(document.documentElement.scrollTop >= 238 ){
 }
     
 }
+window.services=services;
 window.AcessoRapido = AcessoRapido();
 window.OnclikNav = OnclikNav;
 window.navFunction = navFunction;

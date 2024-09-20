@@ -43,7 +43,7 @@ strong:hover{
     background-image: url("/assets/icons/magnifying-glass-solid.svg");
 }
 .divGeral{
-    display: none;
+    display: block;
 }
 
 .divText{
@@ -60,6 +60,11 @@ animation: opAnimated 200ms linear forwards;
 position: absolute;
 transition: all 0.1s;
 }
+
+.IconArrow{
+    margin: 20px;
+}
+
 .opgeral
 {
 
