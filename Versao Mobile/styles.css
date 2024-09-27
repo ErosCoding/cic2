@@ -1,0 +1,142 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.acessibility {
+  background-color: #5EB1FF;
+  padding: 10px;
+  text-align: center;
+}
+
+.acessibility a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.acessibility a:hover {
+  text-decoration: underline;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 300px;
+}
+
+/* Botão de Hambúrguer */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.menu-toggle:focus {
+  outline: none;
+}
+
+/* Barra de Navegação */
+.navbar {
+  background-color: #333;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Conteúdo Principal */
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #5EB1FF;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer-logo {
+  margin-bottom: 10px;
+}
+
+.logo-footer {
+  max-width: 100px;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+      display: none;
+  }
+
+  .navbar.active {
+      display: block;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+  }
+
+  .navbar ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar ul li {
+      margin: 10px 0;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  .logo, .logo-footer {
+      max-width: 200px;
+  }
+}

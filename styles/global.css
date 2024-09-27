@@ -29,3 +29,70 @@ body{
     width: 1280px;
     margin:auto;
 }
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .container-main {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .op {
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+
+    .acessibility-container {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .acessibility {
+        display: block;
+        text-align: center;
+    }
+
+    .pesquisa input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .grid-cl {
+        grid-template-columns: 1fr;
+    }
+
+    .access {
+        font-size: 1rem;
+    }
+
+    .Services {
+        margin-top: 50px;
+    }
+
+    .copyright {
+        height: 100px;
+        background-size: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .op {
+        font-size: 0.875rem;
+    }
+
+    .acessibility-container {
+        font-size: 0.875rem;
+    }
+
+    .pesquisa input {
+        font-size: 14px;
+    }
+}
