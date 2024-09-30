@@ -20,11 +20,11 @@
     --font-extrabold: 'Raleway-ExtraBold';
 }
 
-
 body{
     font-family: "Raleway", sans-serif;
     max-width: 1920px;
 }
+
 .container{
     width: 60%;
     margin:auto;
