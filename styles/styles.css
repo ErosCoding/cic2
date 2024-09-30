@@ -1,4 +1,3 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,19 +9,19 @@ body {
   line-height: 1.6;
 }
 
-.acessibility {
+.acessibility2 {
   background-color: #5EB1FF;
   padding: 10px;
   text-align: center;
 }
 
-.acessibility a {
+.acessibility2 a {
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
 
-.acessibility a:hover {
+.acessibility2 a:hover {
   text-decoration: underline;
 }
 
@@ -59,28 +58,28 @@ body {
 }
 
 /* Barra de Navegação */
-.navbar {
+.navbar2 {
   background-color: #333;
 }
 
-.navbar ul {
+.navbar2 ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
 }
 
-.navbar ul li {
+.navbar2 ul li {
   margin: 0 15px;
 }
 
-.navbar ul li a {
+.navbar2 ul li a {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
   display: inline-block;
 }
 
-.navbar ul li a:hover {
+.navbar2 ul li a:hover {
   background-color: #555;
   border-radius: 5px;
 }
@@ -92,7 +91,7 @@ body {
 }
 
 /* Rodapé */
-.footer {
+.footer2 {
   background-color: #5EB1FF;
   padding: 20px;
   text-align: center;
@@ -123,12 +122,12 @@ body {
       background-color: #333;
   }
 
-  .navbar ul {
+  .navbar2 ul {
       flex-direction: column;
       align-items: center;
   }
 
-  .navbar ul li {
+  .navbar2 ul li {
       margin: 10px 0;
   }
 
@@ -136,7 +135,7 @@ body {
       display: block;
   }
 
-  .logo, .logo-footer {
+  .logo2, .logo-footer {
       max-width: 200px;
   }
 }

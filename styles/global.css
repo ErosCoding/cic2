@@ -26,7 +26,7 @@ body{
     max-width: 1920px;
 }
 .container{
-    width: 1280px;
+    width: 60%;
     margin:auto;
 }
 
@@ -35,8 +35,8 @@ body{
 
 @media (max-width: 768px) {
     .container {
-        width: 100%;
-        padding: 0 15px;
+        width: 90%;
+       
     }
 
     .container-main {
